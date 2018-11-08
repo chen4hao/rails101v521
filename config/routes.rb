@@ -8,5 +8,9 @@ Rails.application.routes.draw do
     end
     resources :posts
   end
+
+  namespace :account do
+    resources :groups
+  end
   root 'groups#index' #這行代表把 localhost:3000/groups 這個網址設成首頁
 end
